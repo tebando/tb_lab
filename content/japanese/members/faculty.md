@@ -7,6 +7,7 @@ member_group: "staff"
 internal: true
 role: "准教授"
 affiliation: "鳴門教育大学 大学院学校教育研究科"
+course: "高度学校教育実践専攻（教科・総合系） / 技術・工業・情報科教育コース / 学習指導力・ICT教育実践力開発コース"
 keywords:
   - "情報教育"
   - "小学校プログラミング教育"
