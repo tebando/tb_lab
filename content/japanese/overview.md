@@ -2,7 +2,7 @@
 title: "研究室概要"
 draft: false
 layout: "pages"
-url: "/overview/"
+url: "overview/"
 bg_image: "images/backgrounds/page-title.jpg"
 description: "研究室の基本情報"
 ---

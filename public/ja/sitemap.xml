@@ -116,7 +116,7 @@
                 href="/ja/tags/"
                 />
   </url><url>
-    <loc>/access/</loc>
+    <loc>/ja/access/</loc>
   </url><url>
     <loc>/ja/contact/</loc>
     <xhtml:link
@@ -130,7 +130,7 @@
                 href="/ja/contact/"
                 />
   </url><url>
-    <loc>/members/</loc>
+    <loc>/ja/members/</loc>
   </url><url>
     <loc>/ja/research/research-3/</loc>
     <xhtml:link
@@ -144,7 +144,7 @@
                 href="/ja/research/research-3/"
                 />
   </url><url>
-    <loc>/publications/</loc>
+    <loc>/ja/publications/</loc>
   </url><url>
     <loc>/ja/research/</loc>
     <xhtml:link
@@ -158,7 +158,7 @@
                 href="/ja/research/"
                 />
   </url><url>
-    <loc>/overview/</loc>
+    <loc>/ja/overview/</loc>
   </url><url>
     <loc>/ja/research/research-2/</loc>
     <xhtml:link
@@ -184,6 +184,6 @@
                 href="/ja/research/research-1/"
                 />
   </url><url>
-    <loc>/join/</loc>
+    <loc>/ja/join/</loc>
   </url>
 </urlset>

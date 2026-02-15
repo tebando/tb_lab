@@ -2,7 +2,7 @@
 title: "アクセス"
 draft: false
 layout: "pages"
-url: "/access/"
+url: "access/"
 bg_image: "images/backgrounds/page-title.jpg"
 description: "所在地とアクセス"
 ---

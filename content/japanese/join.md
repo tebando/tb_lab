@@ -2,7 +2,7 @@
 title: "配属・共同研究"
 draft: false
 layout: "pages"
-url: "/join/"
+url: "join/"
 bg_image: "images/backgrounds/page-title.jpg"
 description: "配属希望・共同研究のご相談"
 ---

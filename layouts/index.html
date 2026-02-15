@@ -194,9 +194,15 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <ul class="list-unstyled">
-          {{ range first 3 (where site.RegularPages "Type" "notice") }}
-          {{ partial "notice-card.html" . }}
+        <ul class="notice-slim-list">
+          {{ range first 10 (where site.RegularPages "Type" "notice") }}
+          <li class="notice-slim-item">
+            <a class="notice-slim-link" href="{{ .Permalink }}">
+              <time class="notice-slim-date" datetime="{{ .PublishDate.Format `2006-01-02` }}">{{ .PublishDate.Format "2006.01.02" }}</time>
+              <span class="notice-slim-title">{{ .Title }}</span>
+              <span class="notice-slim-arrow" aria-hidden="true">&gt;</span>
+            </a>
+          </li>
           {{ end }}
         </ul>
       </div>

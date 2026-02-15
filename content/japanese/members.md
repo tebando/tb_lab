@@ -2,7 +2,7 @@
 title: "メンバー"
 draft: false
 layout: "pages"
-url: "/members/"
+url: "members/"
 bg_image: "images/backgrounds/page-title.jpg"
 description: "研究室メンバー"
 ---

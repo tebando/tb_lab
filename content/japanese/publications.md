@@ -2,7 +2,7 @@
 title: "業績"
 draft: false
 layout: "pages"
-url: "/publications/"
+url: "publications/"
 bg_image: "images/backgrounds/page-title.jpg"
 description: "代表業績（抜粋）"
 ---
