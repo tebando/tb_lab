@@ -2,6 +2,15 @@
 title: "阪東 哲也"
 draft: false
 description: "教員プロフィール"
+weight: 10
+member_group: "staff"
+internal: true
+role: "准教授"
+affiliation: "鳴門教育大学 大学院学校教育研究科"
+keywords:
+  - "情報教育"
+  - "小学校プログラミング教育"
+  - "教育データ科学"
 ---
 
 ## プロフィール

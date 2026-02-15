@@ -1,8 +1,13 @@
-{{- $member := . -}}
-{{- if and $member.internal $member.profile -}}
-<a class="members-name-link" href="{{ $member.profile | relLangURL }}">{{ $member.name }}</a>
-{{- else if and (not $member.internal) $member.external_url -}}
-<a class="members-name-link" href="{{ $member.external_url | safeURL }}" target="_blank" rel="noopener noreferrer">{{ $member.name }}</a>
+{{- $name := .Params.member_name | default .Title -}}
+{{- $internal := true -}}
+{{- if isset .Params "internal" -}}
+  {{- $internal = .Params.internal -}}
+{{- end -}}
+
+{{- if and (not $internal) .Params.external_url -}}
+<a class="members-name-link" href="{{ .Params.external_url | safeURL }}" target="_blank" rel="noopener noreferrer">{{ $name }}</a>
+{{- else if $internal -}}
+<a class="members-name-link" href="{{ .RelPermalink }}">{{ $name }}</a>
 {{- else -}}
-<span class="members-name-link">{{ $member.name }}</span>
+<span class="members-name-link">{{ $name }}</span>
 {{- end -}}

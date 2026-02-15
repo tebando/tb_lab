@@ -1,12 +1,11 @@
-{{- $member := . -}}
-{{- $group := $member.group | default "" -}}
-{{- if and $member.enrolled_year (or (eq $group "master") (eq $group "phd")) -}}
+{{- $group := .Params.member_group | default "" -}}
+{{- if and .Params.enrolled_year (or (eq $group "master") (eq $group "phd")) -}}
   {{- $now := now -}}
   {{- $fiscalYear := int ($now.Format "2006") -}}
   {{- if lt (int ($now.Format "1")) 4 -}}
     {{- $fiscalYear = sub $fiscalYear 1 -}}
   {{- end -}}
-  {{- $diff := sub $fiscalYear (int $member.enrolled_year) -}}
+  {{- $diff := sub $fiscalYear (int .Params.enrolled_year) -}}
   {{- if ge $diff 0 -}}
     {{- if eq $group "master" -}}
       M{{ add $diff 1 }}
