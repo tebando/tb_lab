@@ -4,7 +4,6 @@ slider:
   bg_image : "images/banner/banner-1.jpg"
   slider_item:
     - title : "教育データ活用・学びデザイン研究室"
-      content : "情報教育・小学校プログラミング教育・教育データ科学を軸に、授業改善と学びの質の向上を探究します。"
       animation_in : "left"
       animation_out : "right"
 
@@ -27,9 +26,9 @@ banner_feature:
 ############################## about ##################################
 about:
   enable : true
-  title : "研究室概要"
+  title : "Lab概要"
   image : "images/about/about-data-science.svg"
-  content : "鳴門教育大学 大学院学校教育研究科に所属し、情報教育・小学校プログラミング教育・教育データ科学に関する研究と実践に取り組んでいます。"
+  content : "教育データ科学を軸に、授業改善と学びの質の向上を探究します。AI/ICTを活用した学びのデザインを追究します。"
   button:
     enable : true
     label : "研究室概要を見る"
@@ -39,16 +38,6 @@ about:
 course:
   enable : false
   title : "研究テーマ"
-
-########################## Call to action ############################
-cta:
-  enable : true
-  subtitle : "配属希望・共同研究の相談を受け付けています"
-  title : "研究テーマと目的をご確認のうえ、お問い合わせください"
-  button:
-    enable : true
-    label : "配属・共同研究"
-    link : "join/"
 
 ######################## Success story #############################
 success_story:
@@ -72,3 +61,16 @@ funfacts:
 blog:
   enable : true
   title : "お知らせ"
+
+########################## Call to action ############################
+cta:
+  enable : true
+  subtitle : "研究を希望される方を受け付けています"
+  content : "研究テーマと目的を、お問い合わせください"
+  button:
+    enable : true
+    label : "研究を希望される方へ"
+    link : "join/"
+    enable : true
+    label : "お問い合わせ"
+    link : "contact/"
