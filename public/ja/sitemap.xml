@@ -158,6 +158,8 @@
                 href="/ja/research/"
                 />
   </url><url>
+    <loc>/ja/join/</loc>
+  </url><url>
     <loc>/ja/overview/</loc>
   </url><url>
     <loc>/ja/members/faculty/</loc>
@@ -167,6 +169,8 @@
     <loc>/ja/members/m-2/</loc>
   </url><url>
     <loc>/ja/members/m-3/</loc>
+  </url><url>
+    <loc>/ja/members/alumni-1/</loc>
   </url><url>
     <loc>/ja/research/research-2/</loc>
     <xhtml:link
@@ -192,8 +196,8 @@
                 href="/ja/research/research-1/"
                 />
   </url><url>
-    <loc>/ja/join/</loc>
-  </url><url>
     <loc>/ja/members/phd-1/</loc>
+  </url><url>
+    <loc>/ja/members/rs-1/</loc>
   </url>
 </urlset>

@@ -33,7 +33,7 @@ address = """
 [鳴門教育大学 交通アクセス](https://www.naruto-u.ac.jp/access.html)
 """
 # contact form action
-contact_form_action = "TODO: Replace with actual form endpoint"
+contact_form_action = "https://forms.gle/27n7coB55JCUKAwFA"
 # Google Analytics
 google_analitycs_id = ""
 # top header

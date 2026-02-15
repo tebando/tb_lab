@@ -1,9 +1,10 @@
 ---
-title: "お問い合わせフォーム準備中"
+title: "お問い合わせフォームを公開しました"
 draft: false
 date: 2026-02-13T09:00:00+09:00
 bg_image: "images/backgrounds/page-title.jpg"
-description: "問い合わせ導線の準備"
+description: "問い合わせ導線の公開"
 ---
 
-お問い合わせページにフォーム埋め込み枠を設置しました。URLは TODO として管理しています。
+お問い合わせフォームを公開しました。以下のURLからご連絡ください。  
+https://forms.gle/27n7coB55JCUKAwFA

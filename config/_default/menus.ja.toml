@@ -26,7 +26,7 @@ url = "notice/"
 weight = 5
 
 [[main]]
-name = "配属・共同研究"
+name = "研究を希望される方へ"
 url = "join/"
 weight = 6
 
@@ -37,7 +37,7 @@ weight = 7
 
 [[main]]
 name = "お問い合わせ"
-url = "contact/"
+url = "https://forms.gle/27n7coB55JCUKAwFA"
 weight = 8
 
 # footer menu
@@ -59,4 +59,4 @@ url = "publications/"
 
 [[footer]]
 name = "お問い合わせ"
-url = "contact/"
+url = "https://forms.gle/27n7coB55JCUKAwFA"

@@ -69,6 +69,20 @@
   external_url:
   note:
 
+- id: rs-1
+  name: "博士研究生A"
+  group: "research_student"
+  internal: true
+  role:
+  affiliation: "鳴門教育大学 大学院学校教育研究科"
+  keywords:
+    - "学習データ基盤"
+    - "授業改善"
+  profile: "/members/rs-1/"
+  enrolled_year:
+  external_url:
+  note: "研究計画策定中"
+
 - id: collab-1
   name: "共同研究者"
   group: "collaborator"
@@ -80,6 +94,23 @@
   enrolled_year:
   external_url: 
   note:
+
+- id: alumni-1
+  name: "修了生A"
+  group: "alumni"
+  internal: true
+  role:
+  affiliation:
+  keywords:
+    - "情報教育"
+    - "授業設計"
+  profile: "/members/alumni-1/"
+  enrolled_year:
+  external_url:
+  note:
+  graduation_year: "2025"
+  degree: "修士（教育学）"
+  career: "公立中学校 教員"
 
 - id: collab-2
   name: "共同研究者"

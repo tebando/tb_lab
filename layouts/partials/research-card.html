@@ -1,0 +1,9 @@
+<article class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0 research-tile-card w-100">
+  <a class="research-tile-link" href="{{ .Permalink }}">
+    {{ partial "image.html" (dict "Src" .Params.image "Alt" .Title "Class" "card-img-top rounded-0 research-tile-image" ) }}
+    <div class="card-body">
+      <h4 class="card-title">{{ .Title }}</h4>
+      <p class="card-text">{{ .Summary | plainify | truncate 110 }}</p>
+    </div>
+  </a>
+</article>

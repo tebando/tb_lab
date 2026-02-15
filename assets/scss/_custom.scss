@@ -278,6 +278,45 @@ body {
   background: rgba(255, 255, 255, 0.86);
 }
 
+.research-tile-card {
+  height: 100%;
+}
+
+.research-tile-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.research-tile-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.research-tile-image {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.research-tile-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.research-tile-card .card-title {
+  line-height: 1.4;
+  min-height: 2.8em;
+}
+
+.research-tile-card .card-text {
+  margin-bottom: 0;
+  color: var(--dark);
+}
+
 @media (max-width: 767px) {
   .home-hero {
     padding-top: 120px;
@@ -303,5 +342,9 @@ body {
 
   .members-section-title {
     font-size: 1.2rem;
+  }
+
+  .research-tile-image {
+    height: 180px;
   }
 }
