@@ -1,0 +1,74 @@
+################### Japanese navigation ####################
+
+[[main]]
+name = "概要"
+url = "about/"
+weight = 1
+
+[[main]]
+name = "コース"
+url = "course/"
+weight = 2
+
+[[main]]
+weight = 3
+name = "ページ"
+hasChildren = true
+
+  [[main]]
+  parent = "ページ"
+  name = "教員"
+  url = "teacher/"
+
+  [[main]]
+  parent = "ページ"
+  name = "お知らせ"
+  url = "notice/"
+
+  [[main]]
+  parent = "ページ"
+  name = "イベント"
+  url = "event/"
+
+  [[main]]
+  parent = "ページ"
+  name = "奨学金"
+  url = "scholarship/"
+
+  [[main]]
+  parent = "ページ"
+  name = "研究"
+  url = "research/"
+  
+[[main]]
+name = "ブログ"
+url = "blog/"
+weight = 4
+  
+[[main]]
+name = "お問い合わせ"
+url = "contact/"
+weight = 5
+
+
+# footer menu
+
+[[footer]]
+name = "教員"
+url = "teacher/"
+
+[[footer]]
+name = "お知らせ"
+url = "notice/"
+
+[[footer]]
+name = "イベント"
+url = "event/"
+
+[[footer]]
+name = "奨学金"
+url = "scholarship/"
+
+[[footer]]
+name = "研究"
+url = "research/"

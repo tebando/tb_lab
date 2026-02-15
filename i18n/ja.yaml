@@ -1,0 +1,110 @@
+- id: read_more
+  translation: 続きを読む
+
+- id: contact_form
+  translation: お問い合わせフォーム
+
+- id: send
+  translation: 送信
+
+- id: contact_info
+  translation: 連絡先情報
+
+- id: subscribe_newsletter
+  translation: ニュースレター登録
+
+- id: subscribe
+  translation: 登録する
+
+- id: contact_us
+  translation: お問い合わせ
+
+- id: latest_article
+  translation: 最新記事
+
+- id: categories
+  translation: カテゴリー
+
+- id: tags
+  translation: タグ
+
+- id: see_all
+  translation: すべて見る
+
+- id: apply_now
+  translation: 今すぐ申し込む
+
+- id: posted_by
+  translation: 投稿者
+
+- id: date
+  translation: 日付
+
+- id: time
+  translation: 時間
+
+- id: category
+  translation: カテゴリー
+
+- id: related_course
+  translation: 関連コース
+
+- id: duration
+  translation: 期間
+
+- id: weekly
+  translation: 毎週
+
+- id: fee
+  translation: 料金
+
+- id: teacher
+  translation: 教員
+
+- id: location
+  translation: 場所
+
+- id: entry_fee
+  translation: 入場料
+
+- id: event_speaker
+  translation: 登壇者
+
+- id: more_event
+  translation: その他のイベント
+
+- id: join
+  translation: 参加する
+
+- id: enter_email
+  translation: メールアドレスを入力してください
+
+- id: company
+  translation: 会社
+
+- id: links
+  translation: リンク
+
+- id: courses
+  translation: コース
+
+- id: new_notice
+  translation: 新着のお知らせ
+
+- id: call
+  translation: 電話
+
+- id: email
+  translation: メール
+
+- id: all
+  translation: すべて
+
+- id: interest
+  translation: 活動・関心の概要
+
+- id: our_teachers
+  translation: 教員紹介
+
+- id: download
+  translation: ダウンロード
