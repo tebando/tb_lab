@@ -1,0 +1,220 @@
+{{ define "main" }}
+
+{{ $members := site.Data.members }}
+{{ $staff := where $members "group" "staff" }}
+{{ $phd := where $members "group" "phd" }}
+{{ $master := where $members "group" "master" }}
+{{ $researchStudent := where $members "group" "research_student" }}
+{{ $collaborator := where $members "group" "collaborator" }}
+{{ $alumni := where $members "group" "alumni" }}
+
+<section class="section">
+  <div class="container members-page">
+    {{ if .Content }}
+    <div class="row">
+      <div class="col-12">
+        <div class="content members-intro">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+    <section class="members-section">
+      <h2 class="members-section-title">スタッフ</h2>
+      <div class="table-responsive members-table-wrap">
+        <table class="table members-table">
+          <thead>
+            <tr>
+              <th>氏名</th>
+              <th>職位</th>
+              <th>所属</th>
+              <th>研究テーマ（キーワード）</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ if gt (len $staff) 0 }}
+            {{ range $staff }}
+            <tr>
+              <td>{{ partial "member_link.html" . }}</td>
+              <td>{{ .role | default "-" }}</td>
+              <td>{{ .affiliation | default "-" }}</td>
+              <td>{{ if .keywords }}{{ delimit .keywords ", " }}{{ else }}-{{ end }}</td>
+            </tr>
+            {{ end }}
+            {{ else }}
+            <tr>
+              <td colspan="4">現在、掲載準備中です。</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="members-section">
+      <h2 class="members-section-title">博士学生</h2>
+      <div class="table-responsive members-table-wrap">
+        <table class="table members-table">
+          <thead>
+            <tr>
+              <th>氏名</th>
+              <th>学年</th>
+              <th>所属</th>
+              <th>研究テーマ（キーワード）</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ if gt (len $phd) 0 }}
+            {{ range $phd }}
+            {{ $grade := trim (partial "grade.html" .) " \n\t" }}
+            <tr>
+              <td>{{ partial "member_link.html" . }}</td>
+              <td>{{ if $grade }}{{ $grade }}{{ else }}{{ .note | default "-" }}{{ end }}</td>
+              <td>{{ .affiliation | default "-" }}</td>
+              <td>{{ if .keywords }}{{ delimit .keywords ", " }}{{ else }}-{{ end }}</td>
+            </tr>
+            {{ end }}
+            {{ else }}
+            <tr>
+              <td colspan="4">現在、掲載準備中です。</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="members-section">
+      <h2 class="members-section-title">修士学生</h2>
+      <div class="table-responsive members-table-wrap">
+        <table class="table members-table">
+          <thead>
+            <tr>
+              <th>氏名</th>
+              <th>学年</th>
+              <th>所属</th>
+              <th>研究テーマ（キーワード）</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ if gt (len $master) 0 }}
+            {{ range $master }}
+            {{ $grade := trim (partial "grade.html" .) " \n\t" }}
+            <tr>
+              <td>{{ partial "member_link.html" . }}</td>
+              <td>{{ if $grade }}{{ $grade }}{{ else }}{{ .note | default "-" }}{{ end }}</td>
+              <td>{{ .affiliation | default "-" }}</td>
+              <td>{{ if .keywords }}{{ delimit .keywords ", " }}{{ else }}-{{ end }}</td>
+            </tr>
+            {{ end }}
+            {{ else }}
+            <tr>
+              <td colspan="4">現在、掲載準備中です。</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="members-section">
+      <h2 class="members-section-title">博士研究生</h2>
+      {{ if gt (len $researchStudent) 0 }}
+      <div class="table-responsive members-table-wrap">
+        <table class="table members-table">
+          <thead>
+            <tr>
+              <th>氏名</th>
+              <th>学年 / 注記</th>
+              <th>所属</th>
+              <th>研究テーマ（キーワード）</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $researchStudent }}
+            {{ $grade := trim (partial "grade.html" .) " \n\t" }}
+            <tr>
+              <td>{{ partial "member_link.html" . }}</td>
+              <td>{{ if $grade }}{{ $grade }}{{ else }}{{ .note | default "-" }}{{ end }}</td>
+              <td>{{ .affiliation | default "-" }}</td>
+              <td>{{ if .keywords }}{{ delimit .keywords ", " }}{{ else if .note }}{{ .note }}{{ else }}-{{ end }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+      {{ else }}
+      <p class="members-note">次年度から受け入れ予定。</p>
+      {{ end }}
+    </section>
+
+    <section class="members-section">
+      <h2 class="members-section-title">共同研究者</h2>
+      <div class="table-responsive members-table-wrap">
+        <table class="table members-table">
+          <thead>
+            <tr>
+              <th>氏名</th>
+              <th>職位</th>
+              <th>所属</th>
+              <th>研究テーマ（キーワード）</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ if gt (len $collaborator) 0 }}
+            {{ range $collaborator }}
+            <tr>
+              <td>{{ partial "member_link.html" . }}</td>
+              <td>{{ .role | default "-" }}</td>
+              <td>{{ .affiliation | default "-" }}</td>
+              <td>{{ if .keywords }}{{ delimit .keywords ", " }}{{ else }}{{ .note | default "-" }}{{ end }}</td>
+            </tr>
+            {{ end }}
+            {{ else }}
+            <tr>
+              <td colspan="4">現在、掲載準備中です。</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="members-section">
+      <h2 class="members-section-title">Alumni</h2>
+      <div class="table-responsive members-table-wrap">
+        <table class="table members-table">
+          <thead>
+            <tr>
+              <th>氏名</th>
+              <th>修了年</th>
+              <th>学位</th>
+              <th>研究テーマ（任意）</th>
+              <th>進路（任意）</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ if gt (len $alumni) 0 }}
+            {{ range $alumni }}
+            <tr>
+              <td>{{ partial "member_link.html" . }}</td>
+              <td>{{ .graduation_year | default "-" }}</td>
+              <td>{{ .degree | default "-" }}</td>
+              <td>{{ if .keywords }}{{ delimit .keywords ", " }}{{ else }}-{{ end }}</td>
+              <td>{{ .career | default "-" }}</td>
+            </tr>
+            {{ end }}
+            {{ else }}
+            <tr>
+              <td colspan="5">現在、掲載準備中です。</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</section>
+
+{{ end }}

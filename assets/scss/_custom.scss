@@ -221,6 +221,63 @@ body {
   color: var(--accent);
 }
 
+.members-intro {
+  margin-bottom: 30px;
+}
+
+.members-section + .members-section {
+  margin-top: 28px;
+}
+
+.members-section-title {
+  margin-bottom: 12px;
+  padding-left: 12px;
+  border-left: 4px solid var(--accent);
+  font-size: 1.4rem;
+}
+
+.members-table-wrap {
+  border: 1px solid rgba(43, 43, 43, 0.14);
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.members-table {
+  margin-bottom: 0;
+  color: var(--dark);
+}
+
+.members-table thead th {
+  background: rgba(47, 93, 80, 0.1);
+  color: var(--dark);
+  border-bottom: 1px solid rgba(43, 43, 43, 0.18);
+  white-space: nowrap;
+}
+
+.members-table td,
+.members-table th {
+  padding: 0.72rem 0.8rem;
+  border-top: 1px solid rgba(43, 43, 43, 0.12);
+  vertical-align: middle;
+}
+
+.members-name-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.members-name-link:hover {
+  color: var(--dark);
+  text-decoration: underline;
+}
+
+.members-note {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(43, 43, 43, 0.14);
+  background: rgba(255, 255, 255, 0.86);
+}
+
 @media (max-width: 767px) {
   .home-hero {
     padding-top: 120px;
@@ -242,5 +299,9 @@ body {
   .notice-slim-date {
     min-width: 88px;
     font-size: 12px;
+  }
+
+  .members-section-title {
+    font-size: 1.2rem;
   }
 }

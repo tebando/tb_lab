@@ -1,0 +1,8 @@
+{{- $member := . -}}
+{{- if and $member.internal $member.profile -}}
+<a class="members-name-link" href="{{ $member.profile | relLangURL }}">{{ $member.name }}</a>
+{{- else if and (not $member.internal) $member.external_url -}}
+<a class="members-name-link" href="{{ $member.external_url | safeURL }}" target="_blank" rel="noopener noreferrer">{{ $member.name }}</a>
+{{- else -}}
+<span class="members-name-link">{{ $member.name }}</span>
+{{- end -}}
