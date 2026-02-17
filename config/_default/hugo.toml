@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://tebando.github.io/tb_lab/"
 title = "教育データ活用・学びデザイン研究室 | Education Data & Learning Design Lab"
 theme = "educenter-hugo"
 defaultContentLanguage = "ja"
@@ -23,7 +23,6 @@ shortname = ""
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "情報教育・小学校プログラミング教育・教育データ科学を軸に、授業改善と学びの質の向上を探究する研究室です。"
 author = "Education Data & Learning Design Lab"
 copyright = "© 教育データ活用・学びデザイン研究室"
 # contact info

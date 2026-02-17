@@ -6,6 +6,7 @@ weight = 1
 
 [ja.params]
 home = "ホーム"
+description = "情報教育・小学校プログラミング教育・教育データ科学を軸に、授業改善と学びの質の向上を探究する研究室です。"
 
 [en]
 languageName = "English"
@@ -15,3 +16,4 @@ weight = 2
 
 [en.params]
 home = "Home"
+description = "A lab exploring lesson improvement and learning quality through information education, elementary programming education, and educational data science."
