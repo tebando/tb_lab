@@ -20,7 +20,6 @@
 {{ $affiliationLabel := cond $isEn "Affiliation" "所属" }}
 {{ $themeKeywordLabel := cond $isEn "Research Themes (Keywords)" "研究テーマ（キーワード）" }}
 {{ $graduationYearLabel := cond $isEn "Graduation Year" "修了年度" }}
-{{ $researchThemeLabel := cond $isEn "Research Theme" "研究テーマ" }}
 
 <section class="section">
   <div class="container members-page">
@@ -185,7 +184,7 @@
             <tr>
               <th>{{ $nameLabel }}</th>
               <th>{{ $graduationYearLabel }}</th>
-              <th>{{ $researchThemeLabel }}</th>
+              <th>{{ $themeKeywordLabel }}</th>
             </tr>
           </thead>
           <tbody>
